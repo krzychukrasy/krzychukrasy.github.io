@@ -8,12 +8,8 @@
     <h1>Stronka</h1>
     <marquee><img src="https://media.tenor.com/56ZvQIvyW6kAAAAd/beer.gif"></marquee>
     <script>
-        let r = 50;
-        let g = 100;
         setInterval(function () {
-            r = (r+1)%256;
-            g = (g+1)%256;
-            document.querySelector("body").style.backgroundColor = `rgb(${r}, ${g}, 150)`;;
+            document.querySelector("body").style.backgroundColor = `rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`;
         }, 50);
     </script>
 </body>
